@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #2cccff;
+}
+
+.container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 3rem;
+    padding: 5px 0;
+}
+
+p:first-of-type {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.result {
+    margin-top: 30px;
+    width: 145px;
+    height: 325px;
+    background-color: #fff;
+    outline: 3.5px solid rgb(28, 95, 195);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    /* position: relative; */
+    transition: 0.5s linear;
+}
+
+.result h2 {
+    transition: 0.5s linear;
+    margin-top: auto;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.result span {
+    transition: 0.5s linear;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+.result.active span,
+.result.active h2 {
+    opacity: 0;
+    transform: translateY(-50px);
+    position: absolute;
+}
+
+p:last-of-type {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.list-item .item {
+    width: 40px;
+    height: 95px;
+    background-color: #fff;
+    border: 3.5px solid rgb(28, 95, 195);
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.list-item .item span {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.percent {
+    text-align: center;
+    width: 100%;
+    height: 12.5%;
+    /* min-height: 50%; */
+    margin-top: auto;
+    background-color: #005bf7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    border-radius: 0 0 11.3px 11.3px;
+    transition: 0.5s linear;
+}
+
+.item.active {
+    background-color: #005bf7;
+}
